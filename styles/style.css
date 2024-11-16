@@ -1,42 +1,103 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("../fonts/Gilroy-Semibold.ttf");
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("../fonts/Merriweather-Black.ttf");
+}
+
+/* Общие стили */
+body {
+    background-color: #191411;
+    font-family: 'Gilroy', sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px; /* Добавляем отступы для маленьких экранов */
+}
+
+.button {
+    width: 200px;
+    height: 52px;
+    padding: 19px;
+    border-radius: 8px;
+    background: linear-gradient(86deg, #DA8023 0%, #E2B438 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    color: #191411;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: linear-gradient(96deg, #ac6115 0%, #9e7a19 100%);
+}
+
+.common-title {
+    text-align: center;
+    font-family: "Merriweather", sans-serif;
+    text-transform: uppercase;
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 30px;
+}
+
+/* Стили для секции Tokenomics */
 .tokenomics {
     background-image: url("../images/burgers_bg.png");
     background-position: top center;
     background-size: cover;
-    padding-bottom: 50px;
-    padding-top: 30px;
+    padding: 50px 0;
 }
 
 .tokenomics-list {
     display: flex;
     flex-direction: column; /* Вертикальная ориентация */
     align-items: center;
-    font-size: 18px;
     gap: 20px;
-    margin-bottom: 20px;
-    text-align: center; /* Центрируем текст */
-}
-
-.tokenomics-menu {
-    padding: 0 20px;
+    text-align: center;
 }
 
 .tokenomics-item {
     list-style: none;
+    font-size: 20px;
     margin-bottom: 15px;
-    background: none;
+    padding: 0 10px;
 }
 
 .tokenomics img {
-    max-width: 90%; /* Ограничиваем размер, чтобы вписать в экран */
+    max-width: 90%; /* Ограничиваем размер на мобильных */
+    height: auto;
     margin: 10px auto;
     display: block;
-    border-radius: 15px; /* Красивое закругление */
+    border-radius: 15px;
 }
 
-/* Адаптивные стили для мобильных устройств */
+/* Адаптивные стили */
 @media (max-width: 768px) {
+    .common-title {
+        font-size: 48px;
+    }
+
     .tokenomics-list {
-        font-size: 16px;
+        gap: 15px;
+        font-size: 18px;
     }
 
     .tokenomics img {
@@ -45,17 +106,16 @@
 }
 
 @media (max-width: 480px) {
-    .tokenomics {
-        padding-bottom: 30px;
-        padding-top: 20px;
+    .common-title {
+        font-size: 36px;
     }
 
-    .tokenomics-list {
-        font-size: 14px;
-        gap: 15px;
+    .tokenomics-item {
+        font-size: 16px;
     }
 
     .tokenomics img {
-        max-width: 100%; /* Используем полную ширину для небольших экранов */
+        max-width: 100%;
     }
 }
+
