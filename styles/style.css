@@ -1,3 +1,4 @@
+/* Сброс стилей */
 * {
     margin: 0;
     padding: 0;
@@ -13,22 +14,23 @@
     src: url("../fonts/Merriweather-Black.ttf");
 }
 
-body{
+/* Общие стили */
+body {
     background-color: #191411;
     font-family: 'Gilroy', sans-serif;
     color: white;
 }
 
-.header{
+.header {
     padding: 40px 0;
 }
 
-.container{
+.container {
     max-width: 1400px;
     margin: 0 auto;
 }
 
-.button{
+.button {
     width: 200px;
     height: 52px;
     padding: 19px;
@@ -45,89 +47,74 @@ body{
     text-align: center;
     font-size: 18px;
     text-decoration: none;
-
 }
 
-.main{
-    background-image: url("../images/main_bg.png");
-    background-position: top center ;
-    overflow: hidden;
+.button:hover {
+    background: linear-gradient(96deg, #ac6115 0%, #9e7a19 100%);
 }
 
-.button:hover{
- background: linear-gradient(96deg, #ac6115 0%, #9e7a19 100%);   
-}
-
-.common-title{
+.common-title {
     text-align: center;
     font-family: "Merriweather", sans-serif;
     text-transform: uppercase;
     font-size: 64px;
     line-height: 80px;
     letter-spacing: 1.92px;
-
 }
 
-.ca{
+.ca {
     font-size: 40px;
     margin-top: 100px;
     margin-left: 200px;
 }
 
-.header .container{
+.header .container {
     display: flex;
     align-items: center;
     user-select: none;
     font-size: 40px;
 }
 
-.logo img{
-    vertical-align: bottom;
-}
-
-.menu{
+.menu {
     margin-left: 191px;
 }
 
-.menu-list{
-    list-style:none;
+.menu-list {
+    list-style: none;
     display: flex;
 }
 
-.menu-item{
+.menu-item {
     margin-right: 88px;
     font-size: 30px;
 }
 
-.menu-item a{
+.menu-item a {
     color: white;
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
 }
 
-.menu-item a:hover{
+.menu-item a:hover {
     border-bottom: 2px solid white;
 }
 
-
-
-.main-content{
+.main-content {
     padding-top: 30px;
     padding-bottom: 199px;
 }
 
-.main-content .container{
+.main-content .container {
     position: relative;
 }
 
-.main-info{
+.main-info {
     width: 608px;
     margin-bottom: 100px;
 }
 
-
-.main-title{ 
+.main-title {
     color: white;
     font-family: 'Merriweather', sans-serif;
     font-size: 70px;
@@ -137,37 +124,30 @@ body{
     margin-bottom: 26px;
 }
 
-.main-text{
+.main-text {
     font-family: 'Gilroy';
     font-size: 20px;
     line-height: 29px;
     margin-bottom: 26px;
-
 }
 
-.main-image{
+.main-image {
     position: absolute;
     top: 25px;
-    left: calc(100% - 700px)
-     
+    left: calc(100% - 700px);
 }
 
-.authors{
+.authors {
     margin-top: 10px;
     background-image: url("../images/whybg.png");
     background-position: center;
     background-size: initial;
-    padding-bottom: 80px ;
+    padding-bottom: 80px;
     margin-bottom: 108px;
     padding-top: 8%;
 }
 
-b{
-    color: red;
-    
-}
-
-.why-items{
+.why-items {
     margin-top: 60px;
     display: grid;
     gap: 100px;
@@ -175,24 +155,24 @@ b{
     justify-content: center;
 }
 
-.why-item{
+.why-item {
     text-align: center;
 }
 
-.why-item-title{
+.why-item-title {
     padding: 24px;
     font-size: 24px;
     font-family: "Gilroy", sans-serif;
     line-height: 29px;
 }
 
-.why-item-text{
+.why-item-text {
     font-size: 16px;
     font-family: "Gilroy", sans-serif;
     line-height: 140%;
 }
 
-.tokenomics{
+.tokenomics {
     background-image: url("../images/burgers_bg.png");
     background-position: top center;
     background-size: 1400px;
@@ -200,46 +180,176 @@ b{
     padding-top: 2%;
 }
 
-.tokenomics-list{
+.tokenomics-list {
     display: flex;
     font-size: 25px;
 }
 
-.tokenomics-menu{
+.tokenomics-menu {
     padding-top: 6%;
     padding-left: 450px;
 }
 
-.tokenomics-item{
+.tokenomics-item {
     list-style: none;
     padding-left: 30px;
-    background: url(../images/solana.png) no-repeat 0 50%;;
+    background: url(../images/solana.png) no-repeat 0 50%;
 }
 
-.roadmap{
+.roadmap {
     background-position: top center;
     background-image: url("../images/order_bg.png");
     overflow: hidden;
     padding-top: 11%;
 }
 
-.roadmap-pictures img{
+.roadmap-pictures img {
     margin-left: 10px;
 }
 
-
-.footer{
+.footer {
     padding: 60px 0;
-
 }
 
-.footer .container{
+.footer .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.rights{
+.rights {
     font-size: 16px;
     line-height: 20px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .menu {
+        margin-left: 30px;
+    }
+
+    .menu-list {
+        display: block;
+    }
+
+    .menu-item {
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .main-title {
+        font-size: 50px;
+    }
+
+    .main-info {
+        width: 100%;
+    }
+
+    .main-text {
+        font-size: 18px;
+    }
+
+    .main-image {
+        width: 100%;
+        max-width: 400px;
+        position: static;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .common-title {
+        font-size: 48px;
+    }
+
+    .menu-item {
+        font-size: 20px;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        margin-right: 0;
+    }
+
+    .main-title {
+        font-size: 40px;
+    }
+
+    .main-text {
+        font-size: 16px;
+    }
+
+    .main-image {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .why-items {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .common-title {
+        font-size: 36px;
+    }
+
+    .menu-item {
+        font-size: 18px;
+    }
+
+    .main-title {
+        font-size: 30px;
+    }
+
+    .main-text {
+        font-size: 14px;
+    }
+
+    .main-image {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .why-items {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .roadmap-pictures img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rights {
+        font-size: 14px;
+    }
 }
