@@ -32,7 +32,7 @@ body {
 .button {
     width: 200px;
     height: 35px;
-    padding: 19px;
+    padding: 10px;
     border-radius: 8px;
     background: linear-gradient(86deg, #DA8023 0%, #E2B438 100%);
     box-sizing: border-box;
@@ -124,7 +124,7 @@ body {
 }
 
 .main-info {
-    width: 608px;
+    width: 620px;
     margin-bottom: 100px;
 }
 
