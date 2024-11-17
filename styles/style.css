@@ -405,6 +405,7 @@ b {
    
     .container {
         padding: 0 20px;
+        width: 600px;
     }
 
     .main-title {
