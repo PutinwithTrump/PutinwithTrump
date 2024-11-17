@@ -398,9 +398,9 @@ b {
 .button{
     position: relative;
     top: 100px;
-  left: 10px;
-   
-   width: 200px;
+    left: 10px;
+    height: 35px;
+    width: 200px;
 }
    
     .container {
